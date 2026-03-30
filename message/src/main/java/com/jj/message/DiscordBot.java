@@ -1,5 +1,6 @@
 package com.jj.message;
 
+import com.jj.message.service.DiscordService;
 import com.jj.message.service.WeatherService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
@@ -11,6 +12,7 @@ import org.springframework.stereotype.Component;
 public class DiscordBot implements CommandLineRunner {
 
     private final WeatherService weatherService;
+    private final DiscordService discordService;
 
 
 
