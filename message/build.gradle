@@ -36,7 +36,7 @@ dependencies {
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 
 	// java discord api
-	implementation 'net.dv8tion:JDA:6.4.0'
+	implementation 'net.dv8tion:JDA:5.0.0-beta.20'
 }
 
 dependencyManagement {
