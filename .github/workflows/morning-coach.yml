@@ -23,10 +23,15 @@ jobs:
             - name: 빌드 및 실행
               # 모든 작업을 message 폴더 안에서 수행하도록 경로를 맞췄습니다.
               env:
+                  # 1. application.yml의 ${OPENAI_API_KEY}와 매칭
                   OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+                  # 2. application.yml의 ${DISCORD_TOKEN}과 매칭
                   DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
+                  # 3. application.yml의 ${DISCORD_CHANNEL_ID}와 매칭
                   DISCORD_CHANNEL_ID: ${{ secrets.DISCORD_CHANNEL_ID }}
+                  # 4. application.yml의 ${DISCORD_WEBHOOK_URL}와 매칭
                   DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+                  # 5. application.yml의 ${PUBLIC_DATA_API_KEY}와 매칭 (매우 중요!)
                   PUBLIC_DATA_API_KEY: ${{ secrets.PUBLIC_DATA_API_KEY }}
               run: |
                   cd message
