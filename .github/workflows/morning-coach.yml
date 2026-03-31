@@ -32,4 +32,4 @@ jobs:
                   cd message
                   chmod +x gradlew
                   ./gradlew build -x test
-                  java -jar build/libs/*.jar
+                  java -jar build/libs/*[!plain].jar
