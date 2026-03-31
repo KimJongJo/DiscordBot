@@ -29,6 +29,8 @@ jobs:
                   DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
                   PUBLIC_DATA_API_KEY: ${{ secrets.PUBLIC_DATA_API_KEY }}
 
+                  SPRING_AI_OPENAI_API-KEY: ${{ secrets.OPENAI_API_KEY }}
+
                   DISCORD_CHANNEL: ${{ secrets.DISCORD_CHANNEL_ID }}
                   API_PUBLIC-DATA_URL: ${{ secrets.PUBLIC_DATA_API_KEY }}
               run: |
