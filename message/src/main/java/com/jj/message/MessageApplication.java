@@ -7,7 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MessageApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MessageApplication.class, args);
+		var context = SpringApplication.run(MessageApplication.class, args);
+
+		System.exit(SpringApplication.exit(context));
 	}
 
 }
